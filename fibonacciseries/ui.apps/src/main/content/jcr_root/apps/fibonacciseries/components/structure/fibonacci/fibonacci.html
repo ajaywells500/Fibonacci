@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script>
+  $.ajax({
+         type: 'POST',    
+         url:'/bin/series',
+         data:'First Number='+ firstNumber+'Second Number='+ secondNumber+'Limit='+ limit,
+         success: function(msg){
+           alert(msg); 
+         }
+     });
+
+</script>
+  </head>
+  <body>
+
+  <form action="/bin/series">
+  <label for="username">First number: </label>
+  <input type="text" id="firstNumber" name="Fnum"><br><br>
+  <label for="username">Second number: </label>
+  <input type="text" id="secondNumber" name="secondNumber"><br><br>
+  <label for="username">Limit: </label>
+  <input type="text" id="limit" name="limit"><br><br>
+  <input type="submit" value="Submit">
+</form>  
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
